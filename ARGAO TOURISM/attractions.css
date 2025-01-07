@@ -40,11 +40,13 @@ nav ul li a:hover {
 .attractions-section {
     text-align: center;
     padding: 20px;
+
 }
 
 h1 {
     font-size: 2.5em;
     color: #8B4513; /* Brown color */
+
 }
 
 .images-container {

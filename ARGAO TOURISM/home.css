@@ -1,5 +1,5 @@
 /* HOME */
-* {
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box; /* Include padding and border in width/height */
@@ -12,8 +12,9 @@ body {
 
 header {
     background-color: #6f4f25; /* Brown header */
-    padding: 35px 0; /* Adjusted padding */
+    padding: 45px 0; /* Adjusted padding */
     width: 100%; /* Full width */
+    text-align: center; /* Center align nav items */
 }
 
 nav ul {
