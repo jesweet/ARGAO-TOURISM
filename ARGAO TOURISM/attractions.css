@@ -1,0 +1,124 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #ffffff, #f0f0f0);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #6f4f25; /* Brown header */
+    padding: 35px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    background-color: #6f4f25; /* Brown buttons */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: #4e3629; /* Darker brown on hover */
+}
+
+.attractions-section {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #8B4513; /* Brown color */
+}
+
+.images-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four columns */
+    gap: 20px;
+    padding: 20px;
+}
+
+.image-card {
+    border: #8B4513; /* Brown border */
+    border-radius: 10px;
+    overflow: hidden; /* For rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    position: relative;
+}
+
+.image-card img {
+    width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.description {
+    background-color: #f8f8f8; /* Light background for description */
+    border: 1px solid #8B4513; /* Border for description */
+    border-radius: 5px;
+    padding: 10px;
+    text-align: left;
+}
+
+.description h3 {
+    margin: 0;
+    color: #8B4513; /* Title color */
+}
+
+.description p {
+    margin: 5px 0 0; /* Space below paragraph */
+}
+
+
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.caption {
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+    border: 1px solid #8B4513;
+
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+

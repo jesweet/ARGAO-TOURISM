@@ -1,0 +1,154 @@
+/* General Reset */
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff; /* White background */
+}
+
+/* Header */
+header {
+    background-color: #6f4f25; /* Brown header */
+    padding: 35px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    background-color: #6f4f25; /* Brown buttons */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #4e3629; /* Darker brown on hover */
+}
+
+/* Landing Section */
+.landing {
+    background: url('landing.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; /* White text */
+    text-align: center;
+    padding: 0 20px;
+    position: relative;
+}
+
+.landing-content {
+    position: absolute;
+    bottom: 20%;
+    width: 100%;
+}
+
+.landing-content h1 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.landing-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+/* About Section */
+.about-section {
+    padding: 60px 20px;
+    background-color: #f8f8f8; /* Light gray background */
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #6f4f25; /* Brown color for title */
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 18px;
+    color: #333; /* Dark gray text color */
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+.cta-button {
+    background-color: #6f4f25; /* Brown button */
+    color: white;
+    padding: 15px 30px;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #4e3629; /* Darker brown on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    .landing-content h1 {
+        font-size: 40px;
+    }
+
+    .landing-content p {
+        font-size: 18px;
+    }
+
+    .cta-button {
+        font-size: 16px;
+        padding: 12px 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav a {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+
+    .landing-content h1 {
+        font-size: 30px;
+    }
+
+    .landing-content p {
+        font-size: 16px;
+    }
+
+    .cta-button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
+
+               }

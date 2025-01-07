@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* Use a standard font like Arial */
+    background-color: #f8f8f8; /* Light background */
+    color: #333; /* Dark text */
+}
+
+header {
+    background-color: #6f4f25; /* Brown header */
+    padding: 35px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    background-color: #6f4f25; /* Brown buttons */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: #4e3629; /* Darker brown on hover */
+}
+
+.nav-links a.active {
+    color: #fff; /* Active link color */
+}
+
+.accommodation-list {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.accommodation {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: white; /* White background for the content */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.accommodation h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.accommodation p {
+    font-size: 1.2em;
+    line-height: 1.6em; /* Better line spacing */
+    margin-bottom: 10px;
+}
+
+.show-map {
+    background-color: #6f4f25; /* Button color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.show-map:hover {
+    background-color: #4e3629; /* Darker brown on hover */
+}
+
+.accommodation-image {
+    width: 100%; /* Full width */
+    border-radius: 5px; /* Rounded corners for images */
+    margin-top: 15px; /* Space above the image */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    margin-top: 20px;
+}

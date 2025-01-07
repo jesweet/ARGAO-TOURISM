@@ -1,0 +1,129 @@
+/* HOME */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and border in width/height */
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff; /* White background */
+}
+
+header {
+    background-color: #6f4f25; /* Brown header */
+    padding: 35px 0; /* Adjusted padding */
+    width: 100%; /* Full width */
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between items */
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    background-color: #6f4f25; /* Brown buttons */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: #4e3629; /* Darker brown on hover */
+}
+
+.landing-section {
+    position: relative;
+    text-align: center;
+}
+
+.landing-image {
+    width: 100%;
+    height: auto;
+    max-height: 400px; /* Adjust as needed */
+    object-fit: cover;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.main-title {
+    font-size: 3em;
+    margin: 0;
+}
+
+.subtitle {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.feature {
+    position: relative;
+    text-align: center;
+}
+
+.feature a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.feature-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.attractions-title,
+.eat-title,
+.relax-title {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em; /* Adjust size as needed */
+    font-weight: bold; /* Ensure the text is bold */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack items on smaller screens */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Space between items when stacked */
+    }
+}

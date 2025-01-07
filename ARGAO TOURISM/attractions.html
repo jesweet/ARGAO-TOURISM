@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attractions in Argao</title>
+    <link rel="stylesheet" href="attractions.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="attractions.html">Tourist Attractions</a></li>
+                <li><a href="dine.html">Dine</a></li>
+                <li><a href="products.html">Tourism Products</a></li>
+                <li><a href="accommodations.html">Accommodations</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="attractions-section">
+        <h1>Attractions</h1>
+        <p>Argao is known for its historic and natural attractions. The municipality offers a variety of options that will satisfy every tourist's needs and wants for relaxation and enjoyment. Below are some of the most famous wonders of Argao:</p>
+
+        <div class="images-container">
+            <div class="image-card" onclick="openModal('balay.jpg', 'Balay sa Agta Cave is a very interesting cave formed and can be found in Argao. “Agta” is a term used in Cebuano to describe a huge, dark and pipe smoking human-like creature in Philippine Legends. The cave is thought to be a house of the Agta creature.')" style="border-color: #8B4513;">
+                <img src="balay.jpg" alt="Balay sa Agta Cave">
+                <div class="description">
+                    <h3>Balay sa Agta Cave</h3>
+                    <p>Balay sa Agta Cave is a very interesting cave formed and can be found in Argao.</p>
+                </div>
+            </div>
+            <div class="image-card" onclick="openModal('bugasok.jpg', 'Bugasok Falls is a refreshing natural falls located in the mountains of Argao. It is popular and close to the massive cave.')" style="border-color: #8B4513;">
+                <img src="bugasok.jpg" alt="Bugasok Falls">
+                <div class="description">
+                    <h3>Bugasok Falls</h3>
+                    <p>Bugasok Falls is a refreshing natural falls located in the mountains of Argao.</p>
+                </div>
+            </div>
+            <div class="image-card" onclick="openModal('cabacerradeargao.jpg', 'Cabecera de Argao, the fortified town center and seat of the Argao municipal government. It was once a fortified Spanish pueblo or town designed according to the Spanish Crown’s blueprint for its settlements in the colonies.')" style="border-color: #8B4513;">
+                <img src="cabacerradeargao.jpg" alt="Cabacerra De Argao">
+                <div class="description">
+                    <h3>Cabecera de Argao</h3>
+                    <p>Cabecera de Argao, the fortified town center and seat of the Argao municipal government.</p>
+                </div>
+            </div>
+            <div class="image-card" onclick="openModal('mahayahay.jpg', 'Mahayahay Beach Resort is a very popular beach in Argao, Cebu Province, Philippines. It is a public beach and great for groups who prefer budget place to enjoy and party, especially among families, friends and classmates. Of course, families and whatever kind of gang you have can enjoy the water and the ambiance of the beach.')" style="border-color: #8B4513;">
+                <img src="mahayahay.jpg" alt="Mahayahay Beach">
+                <div class="description">
+                    <h3>Mahayahay Beach Resort</h3>
+                    <p>Mahayahay Beach Resort is a very popular beach in Argao, Cebu Province.</p>
+                </div>
+            </div>
+            <div class="image-card" onclick="openModal('liki.jpg', 'The Liki Cold Spring is located in Barangay Taloot of the town. It is one of the old springs you can find in the Southern Cebu.')" style="border-color: #8B4513;">
+                <img src="liki.jpg" alt="Liki Spring">
+                <div class="description">
+                    <h3>Liki Cold Spring</h3>
+                    <p>The Liki Cold Spring is located in Barangay Taloot of the town.</p>
+                </div>
+            </div>
+            <div class="image-card" onclick="openModal('coal.jpg', 'This is a relatively new nature site in Argao. The resort is owned by the Municipality’s Mayor, Dr. Stanley Caminero.')" style="border-color: #8B4513;">
+                <img src="coal.jpg" alt="Coal Mountain Resort">
+                <div class="description">
+                    <h3>Coal Mountain Resort</h3>
+                    <p>This is a relatively new nature site in Argao.</p>
+                </div>
+            </div>
+            <div class="image-card" onclick="openModal('taloot.jpg', 'Taloot Mangrove Forest has centuries old mangrove trees, one of the most preserved mangrove areas in southern Cebu.')" style="border-color: #8B4513;">
+                <img src="taloot.jpg" alt="Taloot Mangrove Forest">
+                <div class="description">
+                    <h3>Taloot Mangrove Forest</h3>
+                    <p>Taloot Mangrove Forest has centuries old mangrove trees.</p>
+                </div>
+            </div>
+            <div class="image-card" onclick="openModal('sumbria.jpg', 'At Sombria River, there are 20 species of birds like punay (yellow-breasted fruit dove) and exotic animals like wild pythons and monitor lizards.')" style="border-color: #8B4513;">
+                <img src="sumbria.jpg" alt="Sumbria River Cruise">
+                <div class="description">
+                    <h3>Sumbria River</h3>
+                    <p>At Sombria River, there are 20 species of birds and exotic animals.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption" class="caption"></div>
+    </div>
+
+    <script>
+        function openModal(imageSrc, description) {
+            const modal = document.getElementById("myModal");
+            const modalImg = document.getElementById("img01");
+            const captionText = document.getElementById("caption");
+            modal.style.display = "block";
+            modalImg.src = imageSrc;
+            captionText.innerHTML = description;
+        }
+
+        function closeModal() {
+            const modal = document.getElementById("myModal");
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            const modal = document.getElementById("myModal");
+            if (event.target == modal) {
+                closeModal();
+            }
+        }
+    </script>
+</body>
+</html>

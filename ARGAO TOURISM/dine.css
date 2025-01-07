@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #ffffff, #f0f0f0);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #6f4f25; /* Brown header */
+    padding: 35px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    background-color: #6f4f25; /* Brown buttons */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: #4e3629; /* Darker brown on hover */
+}
+
+.dine-section {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #8B4513; /* Brown color */
+}
+
+.restaurant-container {
+    display: flex;
+    flex-direction: column; /* Each restaurant in its own column */
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.restaurant-card {
+    border: 2px solid #8B4513; /* Brown border */
+    border-radius: 10px;
+    overflow: hidden; /* For rounded corners */
+    background-color: #f8f8f8; /* Light background for cards */
+    padding: 10px;
+    text-align: left;
+    width: 90%; /* Width of the card */
+    max-width: 400px; /* Max width for larger screens */
+}
+
+.restaurant-card img {
+    width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.restaurant-card h3 {
+    color: #8B4513; /* Title color */
+}
+
+.restaurant-card p {
+    margin: 5px 0; /* Space between paragraphs */
+}
+
+.restaurant-card a {
+    color: #6f4f25; /* Link color */
+    text-decoration: none;
+}
+
+.restaurant-card a:hover {
+    text-decoration: underline; /* Underline on hover */
+}

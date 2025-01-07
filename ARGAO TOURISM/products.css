@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f8f8; /* Light background */
+
+}
+
+header {
+    background-color: #6f4f25; /* Brown header */
+    padding: 50px 0; /* Consistent padding */
+}
+
+nav ul {
+    display: flex;
+    justify-content: center; /* Center align the navigation items */
+    gap: 35px; /* Space between items */
+    flex-wrap: wrap; /* Allow wrapping if needed */
+    list-style: none; /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0; /* Remove extra margins */
+}
+
+nav ul li a {
+    background-color: #6f4f25; /* Brown buttons */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Padding for buttons */
+    text-decoration: none; /* No underline */
+    font-size: 15px; /* Font size */
+    border-radius: 25px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+    display: inline-block; /* Block element for padding */
+}
+
+nav ul li a:hover {
+    background-color: #4e3629; /* Darker brown on hover */
+}
+
+nav ul li a.active {
+    background-color: #4e3629;
+    color: #f0e68c; /* Light color for active link */
+}
+
+.tourism-products {
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: white; /* White background for the content */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+
+}
+
+.tourism-products h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #8B4513;
+    text-align: center; /* Center align title */
+}
+
+.tourism-products p {
+    font-size: 1.2em;
+    line-height: 1.6em; /* Better line spacing */
+    margin-bottom: 20px;
+}
+
+.product {
+    margin-bottom: 30px;
+
+}
+
+.product h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+
+.product-images {
+    display: flex;
+    gap: 15px; /* Space between images */
+    margin-bottom: 10px; /* Space below the images */
+}
+
+.product-image {
+    width: calc(33.33% - 10px); /* Three images side by side with spacing */
+    height: auto;
+    border-radius: 5px; /* Rounded corners for images */
+}
+
+@media (max-width: 768px) {
+    .tourism-products {
+        padding: 15px;
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack items on smaller screens */
+    }
+
+    .product-images {
+        flex-direction: column; /* Stack images on smaller screens */
+    }
+
+    .product-image {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
